@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta sobre Futbolistas</title>
+  <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+
+  <h1 id="title">Encuesta sobre Futbolistas</h1>
+  <p id="description">
+    Gracias por participar en nuestra encuesta. Por favor, completa los siguientes campos con tus datos.
+  </p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre">
+
+    <label id="email-label" for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+
+    <label id="number-label" for="number">Edad:</label>
+    <input type="number" id="number" name="number" required placeholder="Ingresa tu edad" min="18" max="100">
+
+    <label for="dropdown">Selecciona tu futbolista favorito:</label>
+    <select id="dropdown" name="futbolista" required>
+      <option value="Messi">Lionel Messi</option>
+      <option value="Cristiano Ronaldo">Cristiano Ronaldo</option>
+    </select>
+
+    <fieldset>
+      <legend>¿Qué prefieres?</legend>
+      <label>
+        <input type="radio" name="preferencia" value="Atacante" required> Atacante
+      </label>
+      <label>
+        <input type="radio" name="preferencia" value="Defensa"> Defensa
+      </label>
+    </fieldset>
+
+    <label for="habilidades">Selecciona las habilidades que prefieres en un futbolista:</label><br>
+    <label>
+      <input type="checkbox" name="habilidades" value="Velocidad"> Velocidad
+    </label><br>
+    <label>
+      <input type="checkbox" name="habilidades" value="Técnica"> Técnica
+    </label><br>
+    <label>
+      <input type="checkbox" name="habilidades" value="Trabajo en equipo"> Trabajo en equipo
+    </label><br>
+
+    <label for="comentarios">Comentarios adicionales:</label><br>
+    <textarea id="comentarios" name="comentarios" placeholder="Deja tus comentarios aquí..." rows="4" cols="50"></textarea><br>
+
+    <button type="submit" id="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
+
+
+
+
